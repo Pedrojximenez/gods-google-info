@@ -1,0 +1,26 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Privacy — Googleデータの取扱い | BlueSky / GODS</title><link rel="stylesheet" href="../site.css"></head><body><div class="review">公開前の内容確認用・未公開</div><header><div class="wrap"><div class="brand">BlueSky / GODS</div><nav aria-label="ページ案内"><a href="../index.html">アプリ案内</a><a href="../privacy/index.html">Privacy</a><a href="../terms/index.html">Terms</a></nav></div></header><main><h1>Privacy — Googleデータの取扱い</h1>
+<p>BlueSkyの本人用作業ツールGODSと、そのGoogle連携アプリ gods-scheduler のデータ取扱いを説明します。</p>
+<h2>扱うデータと目的</h2>
+<ul><li>Google Drive・Docs：ファイルの識別情報・名称等のメタデータ、指定文書の内容、作成・更新する内容。文書の検索、参照、整理、要約、編集に用います。</li><li>Google Calendar：カレンダー・予定の情報と指定された変更内容。予定の参照・管理に用います。</li><li>YouTube：管理対象チャンネル・動画の情報、字幕と修正内容。YouTube API Servicesを使ったチャンネル運用・字幕制作に用います。</li><li>OAuth認可情報、処理対象の識別情報、成否・時刻・エラー等の記録。接続、作業の確認、再開、問題の調査に用います。</li></ul>
+<h2>Googleサービスへの送信</h2>
+<p>Google APIへの要求には、対象を識別する情報と操作内容が含まれます。文書・予定・字幕を作成または更新する場合は、本人が指定した内容を対象のGoogleサービスへ送信します。</p>
+<h2>選択したAIでの処理</h2>
+<p>取得結果や検索結果は、操作を呼び出したAIクライアントへ返され、選択したAIサービスで要約・整理・予定管理等に処理される構成があります。登録された経路にはGoogle Gemini系・Claude系クライアントがあり、保存した運用記憶をCodex等から検索・参照する経路もあります。すべてのGoogleデータを常時すべてのAIサービスへ送信するという説明ではありません。</p>
+<p>端末内のLM Studio互換APIで運用記憶を要約する設定と、その記憶を後から別のAIクライアントで参照する処理は別の経路です。AIサービス側の履歴・ログ・学習等の取扱いは、使用する製品・契約・設定によります。本書は提供者による学習利用が一切ないと保証するものではありません。</p>
+<p>Google Workspaceデータには<a href="https://developers.google.com/workspace/workspace-api-user-data-developer-policy">Limited Useを含む利用条件</a>が適用されます。利用者向け作業の推論と、汎用モデルの作成・学習・改善への再利用は区別され、要約・派生記録も適用条件の確認対象です。</p>
+<h2>保存先と保持</h2>
+<p>認可情報、字幕ファイル、処理状態・操作記録を端末側へ保存する構成があります。Driveから取り込んだ運用データは、ローカルのデータベース・文書・ai-memory等の検索用記憶へ保存する処理があります。</p>
+<p>運用記録の一部は、AppleのiCloud同期対象であるObsidianフォルダに保存する構成です。AIクライアントや提供者側の履歴・ログは、これらの端末側保存物とは別に扱われます。</p>
+<p>必要な要約・制作記録は、本人が削除するまで保持する方針です。Googleから取得したAPI応答・キャッシュと、本人が作成した原稿や制作記録は区別して確認します。APIごとの更新・削除条件があるため、この保持方針を取得データすべてに無条件に適用するものではありません。</p>
+<p>処理が終わると全保存先のデータが直ちに消える仕組みではありません。ここで案内する削除対応は手動で、一律の自動削除期限や全コピーの即時消去を保証しません。</p>
+<h2>保存データの削除を依頼する方法</h2>
+<p><a href="mailto:nadoaqui@gmail.com?subject=GODS%E4%BF%9D%E5%AD%98%E3%83%87%E3%83%BC%E3%82%BF%E5%89%8A%E9%99%A4%E4%BE%9D%E9%A0%BC">nadoaqui@gmail.com</a>へ、件名「GODS保存データ削除依頼」として、対象の文書・予定・動画等を識別できる情報と、削除したい範囲をお知らせください。パスワード、認証コード、トークンを送る必要はありません。</p>
+<p>本人と対象を確認し、GODSで管理する保存データ・関連記録・検索用索引を確認して手動で対応します。確認できた結果と、残る確認・対応範囲をお知らせします。GODS側のコピーを削除する依頼を、Google上の文書・予定・公開字幕や本人の原稿・素材を削除する指示として扱いません。</p>
+<p>iCloudの同期先・復元領域、外部AIの履歴・ログ、バックアップは個別に確認する対象です。GODS側の削除だけで他社サービスの全コピーも消去されたとは扱いません。こちらで確認・操作できない範囲は、その旨と利用者側で確認する手続を案内します。</p>
+<h2>Google認可の取消し</h2>
+<p><a href="https://myaccount.google.com/connections">Googleアカウントの接続管理</a>または<a href="https://security.google.com/settings/security/permissions">Googleのセキュリティ設定</a>から、アプリへのアクセス許可を確認・取り消せます。認可取消しと保存済みデータの削除は別の対応です。YouTube上のデータ自体を削除する場合は、YouTube等の対応する操作が別途必要です。</p>
+<h2>案内サイトの配信</h2>
+<p>この案内サイトはGitHub Pagesで配信する方針です。GitHubは閲覧時のIPアドレスをセキュリティ目的で記録・保存します。詳しくは<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーに関する説明</a>をご確認ください。今回の静的ページに独自の解析タグ・広告・入力フォームは設けていません。</p>
+<h2>関連ポリシーと変更</h2>
+<p><a href="https://policies.google.com/privacy">Googleプライバシーポリシー</a>、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>をご参照ください。扱うデータ・用途・受渡し先を変更する場合は、事前に説明し、必要な同意を確認します。</p>
+<h2>お問い合わせ・削除依頼</h2><p>BlueSky / GODS：<a href="mailto:nadoaqui@gmail.com">nadoaqui@gmail.com</a></p></main><footer>BlueSky / GODS · 2026-11-02</footer></body></html>
