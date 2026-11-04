@@ -379,13 +379,22 @@
   /* ---------- footer ---------- */
   footer{background:var(--dark);color:rgba(255,242,228,.62);padding:0 0 42px;font-size:12.5px;border-top:1px solid var(--line-dark)}
   .footer-contact{
-    display:flex;gap:14px 48px;flex-wrap:wrap;align-items:baseline;
+    display:flex;gap:14px;flex-wrap:wrap;
     padding:34px 0 26px;border-bottom:1px solid var(--line-dark);margin-bottom:26px;
   }
-  .footer-contact a{text-decoration:none;color:#fff2e4;font-weight:900}
-  .footer-contact .fc-tel{font-family:"Archivo",sans-serif;font-size:clamp(26px,3.6vw,38px);letter-spacing:.02em;line-height:1.1}
-  .footer-contact .fc-mail{font-size:clamp(17px,2.2vw,23px);word-break:break-all}
-  .footer-contact .fc-label{font-family:"Archivo",sans-serif;font-size:10.5px;letter-spacing:.24em;font-weight:800;color:var(--amber);display:block;margin-bottom:4px}
+  .footer-contact .fc-btn{
+    display:flex;flex-direction:column;justify-content:center;gap:2px;flex:1 1 280px;
+    text-decoration:none;font-weight:900;border-radius:18px;padding:16px 24px;min-height:76px;transition:.18s;
+  }
+  .footer-contact .fc-btn-tel{background:var(--orange);color:#fff}
+  .footer-contact .fc-btn-tel:hover{background:var(--orange-2);transform:translateY(-2px)}
+  .footer-contact .fc-btn-mail{border:2px solid rgba(255,242,228,.5);color:#fff2e4}
+  .footer-contact .fc-btn-mail:hover{background:rgba(255,242,228,.12);border-color:var(--amber)}
+  .footer-contact .fc-label{font-family:"Archivo",sans-serif;font-size:10.5px;letter-spacing:.24em;font-weight:800;color:var(--amber)}
+  .footer-contact .fc-btn-tel .fc-label{color:rgba(255,255,255,.85)}
+  .footer-contact .fc-value{line-height:1.25}
+  .footer-contact .fc-btn-tel .fc-value{font-family:"Archivo",sans-serif;font-size:clamp(24px,3.2vw,34px);letter-spacing:.02em}
+  .footer-contact .fc-btn-mail .fc-value{font-size:clamp(16px,2vw,21px);word-break:break-all}
   .footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
   .footer-brand{font-family:"Archivo",sans-serif;color:#fff2e4;letter-spacing:.12em;font-weight:900;font-size:14px}
   .footer-links{display:flex;gap:20px;flex-wrap:wrap}
@@ -855,14 +864,8 @@
 <footer>
 <div class="wrap">
 <div class="footer-contact">
-<div>
-<span class="fc-label">Tel</span>
-<a class="fc-tel" href="tel:09016909181">090-1690-9181</a>
-</div>
-<div>
-<span class="fc-label">Mail</span>
-<a class="fc-mail" href="mailto:obayashi0214@gmail.com">obayashi0214@gmail.com</a>
-</div>
+<a class="fc-btn fc-btn-tel" href="tel:09016909181"><span class="fc-label">Tel — お電話</span><span class="fc-value">090-1690-9181</span></a>
+<a class="fc-btn fc-btn-mail" href="mailto:obayashi0214@gmail.com"><span class="fc-label">Mail — メール</span><span class="fc-value">obayashi0214@gmail.com</span></a>
 </div>
 <div class="footer-inner">
 <span class="footer-brand">JOY TAPAS　ジョイタパス</span>
